@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gaurav.flashledon">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/btn_switch_on"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/btn_switch_on"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+
+        <activity android:name=".FlashTorch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
